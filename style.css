@@ -14,7 +14,6 @@
 }
 
 body {
-
     /*cor de fundo da pagina*/
     background-color: #181818;
 
@@ -96,7 +95,7 @@ body {
     font-size: 18px;
 }
 
-.container-password{
+.container-password {
     max-width: 480px;
     margin: 14 0;
     display: flex;
@@ -109,17 +108,17 @@ body {
     cursor: pointer;
 }
 
-.title{
-    text-align:center;
-    color:#FFF;
+.title {
+    text-align: center;
+    color: #FFF;
     font-size: 28px;
     margin-top: 24px;
     margin-bottom: 8px;
 }
 
-.password{
+.password {
     height: 60px;
-    background-color: rgba(0,0,0,0.400);
+    background-color: rgba(0, 0, 0, 0.400);
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -128,11 +127,11 @@ body {
     transition: transform 0.5s;
 }
 
-.password:hover{
+.password:hover {
     transform: scale(1.05);
 }
 
-.tooltip{
+.tooltip {
     color: #FFF;
     position: relative;
     top: 20px;
@@ -146,11 +145,11 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.container-password:hover .tooltip{
+.container-password:hover .tooltip {
     visibility: visible;
     bottom: 50px;
     opacity: 1;
