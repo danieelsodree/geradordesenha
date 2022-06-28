@@ -1,0 +1,157 @@
+/*realizando alterações globais na pagina*/
+* {
+    /*tirando a serifa da fonte*/
+    font-family: sans-serif;
+
+    /*vai utilizar 100% da página*/
+    width: 100%;
+
+    /*margin 0 e auto na esquerda e na direita*/
+    margin: 0 auto;
+
+    /*por padrão*/
+    box-sizing: border-box;
+}
+
+body {
+
+    /*cor de fundo da pagina*/
+    background-color: #181818;
+
+    /*100% da largura*/
+    width: 100%;
+
+    /*100vh é da altura que esta mostrando na tela*/
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.logo {
+    /*largura máxima da logo de 600px*/
+    max-width: 600px;
+
+    /*24px da margem de baixo*/
+    margin-bottom: 24px;
+}
+
+.container-input {
+    /*largura máxima do bloco do input de 480px*/
+    max-width: 480px;
+
+    /*14px de cima e embaixo e 0 na direita e na esquerda*/
+    margin: 14px 0;
+}
+
+.container-input span {
+    color: #FFF;
+
+    /*aumentando a fonte para 22px*/
+    font-size: 22px;
+}
+
+.slider {
+    /*tirar a aparência de preenchido que tem*/
+    -webkit-appearance: none;
+
+    width: 100%;
+
+    /*arredondar a borda*/
+    border-radius: 5px;
+
+    /*fundo do slider*/
+    background: #DFDFDF;
+
+    height: 18px;
+    outline: none;
+    margin-top: 8px;
+
+}
+
+.button-cta {
+    /*altura do botão de 40px*/
+    height: 40px;
+
+    background-color: #3eb72b;
+
+    /*tirando a borda padrão*/
+    border: 0;
+
+    /*arredondando a borda*/
+    border-radius: 4px;
+
+    /*quando o mouse passa por cima do botão aparece a mão para clicar*/
+    cursor: pointer;
+
+    margin-top: 40px;
+    color: #FFF;
+
+    /*deixar negrito*/
+    font-weight: bold;
+
+    font-size: 18px;
+}
+
+.container-password{
+    max-width: 480px;
+    margin: 14 0;
+    display: flex;
+
+    /*alinhando os itens no centro*/
+    align-items: center;
+
+    /*um item abaixo do outro*/
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title{
+    text-align:center;
+    color:#FFF;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.password{
+    height: 60px;
+    background-color: rgba(0,0,0,0.400);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    transition: transform 0.5s;
+}
+
+.password:hover{
+    transform: scale(1.05);
+}
+
+.tooltip{
+    color: #FFF;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background: rgb(15, 15, 15);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide{
+    display: none;
+}
+
+.container-password:hover .tooltip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
